@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {margin: 0; padding: 0; font-family: Roboto; outline: none;}
+body , html {width: 100%}
+body {background: #F1F1F1}
+ul {list-style: none}
+button {cursor:pointer;}
+br {clear: both}
+
+#fullContent {text-align: center;}
+
+#header {background: url(../assets/logo-vivareal.png) 5px center no-repeat, linear-gradient(90deg, #3CACFF 55px, #3090CD 55px); height: 50px; line-height: 50px; position: fixed; width: 100%; top: 0}
+#header h1 {font-size: 14px; margin-left: 60px; color: #FFF; text-align: left;	}
+#header button {float: right; height: 30px; margin: 10px 10px 0 0; padding: 3px 10px 3px 30px; background: #164E6D url("../assets/plus-icon.png") no-repeat 7px center; border: none; color:#FFF; text-transform: uppercase; font-size: 11px; font-weight: bold; border-radius: 5px; background-size: auto 60%}
+#header button i {margin-right: 5px}
+
+#filter {text-align: center; background: #F9F9F9; padding: 5px 0; height: 55px; margin-top: 50px}
+#filter button {width: 90%; padding: 7px 0; border: none; background: #F9F9F9; font-size: 15px; font-weight: bold; letter-spacing: 1px; color:#505050; margin-top: 10px; background: white; border-radius: 5px; box-shadow: 1px 1px 10px -2px #3090CD}
+#filter button i {background: #FFF; padding: 3px 5px; border-radius: 5px; box-shadow: 1px 1px 8px -3px #000; color:#3090CD;}
+#filter ul {background: red; width: 100%; display: none;}
+#filter ul li {width: 40%; float: left; margin: 0 auto; text-align: left; text-transform: uppercase; font-size: 13px; padding: 5px 5%; color: #666}
+#filter ul li:last-child {width: 90%;}
+#filter ul li input {padding: 10px 5px; width: 90%; display: block; margin: 2px 0; border: 1px solid #EFEFEF; text-align: center;}
+#filter ul li:last-child input {width: 40%; display: inline-block;}
+#filter ul li:last-child input:last-child {float: right;}
+
+#menu {display:none; background: #164E6D; position: fixed; height: 100vh; width: 110px; margin-top: 70px}
+#menu .bts div {color: #FFF; text-transform: uppercase; font-size: 11px; font-weight: bold; margin:10px auto; padding: 50px 0 10px; border-radius: 5px; background-color: #3CACFF; width: 90px; background-position: center 5px; background-image: url(../assets/building.png); background-repeat: no-repeat;}
+#menu .bts div:nth-child(2) {background-color: rgba(0,0,0,0); background-image: url(../assets/plus-icon.png); padding-top: 40px}
+
+#display {text-align: center; background: white; padding: 10px 0; margin: 10px 5%; width: 90%; border-radius: 3px; box-shadow: 0px 0px 1px 0px #666}
+#display .anuncios {text-align: center;}
+#display .anuncios li {width:90%; margin: 0 auto; border-top: 1px solid #eee; padding: 15px 0; border-bottom: 1px solid #ccc; max-width: 300px;}
+#display .anuncios li:first-child {border-top: none; padding-top: 5px}
+#display .anuncios li:last-child {border-bottom: none; padding-bottom: 5px}
+#display .anuncios li .image {width:100%; max-width: 300px; height: 200px; background: url(../assets/foto_min.png) 0 0 no-repeat; margin: 0 auto}
+#display .anuncios li .image .price {position: absolute; color:#FFF;, font-weight: bold; font-size: 20px; margin: 170px 0 0 10px; text-shadow: 1px 1px 1px #000}
+#display .anuncios li .description {text-align: left; font-size: 13px; color:#707070;}
+#display .anuncios li .description .idt {margin: 10px 0; font-size: 11px; border: 1px solid #666; padding: 3px 0; width: 50px; text-align: center; font-weight: bold; color: #666}
+#display .anuncios li .description h3 {color: #505050; margin-bottom: 5px;}
+#display .anuncios li .description .features {margin: 10px auto; width: 100%; max-width: 300px;}
+#display .anuncios li .description .features ul {text-align: center; background: #FAFAFA; box-shadow: 0px 0px 1px 0px #666; height: 45px; width: 100%; max-width: 300px}
+#display .anuncios li .description .features ul li {float: left; padding: 27px 0 0; width: 33%; text-transform: uppercase; background-repeat: no-repeat; background-position: center 5px; font-size: 11px; font-weight: bold; height: 17px; border: none}
+#display .anuncios li .description .features ul li:first-child {background-image: url(../assets/ic-card-area.png)}
+#display .anuncios li .description .features ul li:nth-child(2) {background-image: url(../assets/ic-card-beds.png)}
+#display .anuncios li .description .features ul li:nth-child(3) {background-image: url(../assets/ic-card-bathroom.png)}
+#display .btViewAd {border: none; background: #419BF9; padding: 10px 0; max-width: 300px; margin: 0 auto; width: 100%; border-radius: 2px; text-transform: uppercase; color:white; font-weight: bold; letter-spacing: 1px; border-bottom: 1px solid #3090CD}
+
+#loadMore {margin: 5px auto 15px; border: none; background: linear-gradient(175deg, #419BF9, #164E6D); padding: 10px 0; width: 300px; border-radius: 2px; text-transform: uppercase; color:white; font-weight: bold; letter-spacing: 1px; border-bottom: 1px solid #3090CD;}
+
+#loading {width:100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999; background-color: rgba(48, 144, 205, .9); text-align: center; color: #FFF; font-size: 20px; text-transform: uppercase; padding-top: 40vh; display: none}
+#loading span {display: block; margin-bottom: 40px}
+
+
+@media screen and (min-width: 600px) {
+    #display {width: 60%; float: right; margin: 60px 10px 10px;}
+    #filter {position: fixed; width: 37%; margin-top: 60px; height: 100vh; z-index: 0; max-width: 300px}
+    #filter button {display: none;}
+    #filter ul {display: block;}
+    #loadMore {float: right; margin-right: 10%; width: 40%}
+}
+
+@media screen and (min-width: 750px) {
+    #display {width: calc(95% - 400px); margin-top: 80px}
+    #filter {margin:80px 0 0 120px}
+    #header {height: 70px; line-height: 70px; background: url(../assets/logo-vivareal.png) 33px center no-repeat, linear-gradient(90deg, #3CACFF 110px, #3090CD 110px);}
+    #header h1 {margin-left: 130px; font-size: 17px}
+    #header button {display: none}
+    #menu {display: block;}
+}
+
+@media screen and (min-width: 1177px) {
+    #display .anuncios li {max-width: 100%; height: 220px}
+    #display .anuncios li .image {float: left;}
+    #display .anuncios li .description {float: right; width: calc(100% - 320px)}
+    #display .anuncios li .description .features {margin-left: 0;}
+}
+
+@media screen and (min-width: 1300px) {
+    #display .anuncios li .description .features {max-width: 100%; background: #FAFAFA; box-shadow: 0px 0px 1px 0px #666; height: 45px}
+    #display .anuncios li .description .features ul {width: calc(100% - 170px); float: left; box-shadow: none}
+    #display .anuncios li .description .features .btViewAd {width: 170px; float: right; height: 45px}
+}

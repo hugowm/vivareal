@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SPOTIPPOS</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link rel="stylesheet" href="style/style.css" />
+	</head>
+	<body>
+		<div id="fullContent">
+			<div id="header">
+				<button>Novo Anuncio</button>
+				<h1>SPOTIPPOS - ANÚNCIOS</h1>
+			</div>
+			<div id="menu">
+				<div class="bts">
+					<div id="btAnuncios">anúncios</div>
+					<div id="btNewAnuncio">novo anúncio</div>
+				</div>
+			</div>
+			<div id="filter">
+				<ul>
+					<li>ID <input type="number" id="idAnuncio"></li>
+					<li>Área <input type="number" id="areaAnuncio"></li>
+					<li>quartos <input type="number" id="quartosAnuncio"></li>
+					<li>banheiros <input type="number" id="banheirosAnuncio"></li>
+					<li>
+						valor<br />
+						<input type="number" id="vlminAnuncio" placeholder="Valor minimo"> 
+						<input type="number" id="vlmaxAnuncio" placeholder="Valor maximo">
+					</li>
+				</ul>
+				<button id="btnFilter"><span>Filtros</span> <i class="fas fa-angle-double-down"></i></button>
+			</div>
+			<div id="display">
+				<ul class="anuncios">
+				</ul>
+			</div>
+			<br />
+			<button id="loadMore">carregar mais</button>
+		</div>
+		<div id="loading">
+			<span>Carregando Anúncios</span>
+			<i class="fas fa-spinner fa-spin fa-2x"></i>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
